@@ -18,16 +18,27 @@ const sum = function(num) {
 	return total;
 };
 
-const multiply = function() {
-
+const multiply = function(num) {
+  let product = 1;
+  for(let i = 0 ; i < num.length ; i++) {
+    product *= num[i];
+  }
+  return product;
+};
+const power = function(a, b) {
+ 	let product = a;
+	for(let i = 1 ; i < b ; i++) {
+ 	  product *= a;
+ 	}
+ 	return product;
 };
 
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = function(num) {
+	let product = num + 1;
+ 	for(let i = 0 ; i < num ; i++) {
+ 	  product *= (num - i);
+  	}
+ 	return product / (num + 1);
 };
 
 // Do not edit below this line
